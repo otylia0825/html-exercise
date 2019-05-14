@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外部連結與圖片</title>
+</head>
+<body>
+    
+    <h1>連結</h1>
+
+    <!--
+        <a>標籤
+            herf - 連結位址
+                可以是完整的網址或是相對於當前網址的路徑
+
+            target - 開啟連結的方式，指定連結在哪邊開啟
+                _self ： 於當前頁面開啟(default)
+                _blank ： 於新分頁開啟
+
+                ［於iframe使用場景］
+                    _parent ： 在父視窗開啟
+                    _top ： 在最上層視窗開啟
+                    framename ： iframe的name
+            
+
+    -->
+    <h3>a 標籤</h3>
+    <a href="http://tw.yahoo.com" target="_blank">yahoo</a>
+    <a href="01.html">01</a>
+    <!--
+        相對目錄
+
+        使用 / 作為目錄分隔符號
+        ./ 或 / 表示當前目錄
+        ../ 表示上一層目錄
+        ../../ 表示上上一層目錄
+        以此類推...
+    -->
+
+    <!--
+        ./html-exercise
+        ./01.html
+        ./02.html
+        ./03.html
+        ./README.md
+        ./temp
+        ./temp/a.html
+    -->
+    <a href="temp/a.html">a</a>
+
+
+    <h3>img 標籤</h3>
+
+    <!--
+        <img> 標籤
+            src - 影像所在路徑
+                檔案路徑(相對目錄)
+                網址(加入http/https前輟)
+            
+                alt - 當影像不存在時，要顯示的文字
+
+                title - 定義該影像的標題，滑鼠移過顯示的提示文字
+
+                width - 指定影像的寬 (可用 px 、 % 、 vw)
+                height - 指定影像的高 (可用 px 、 % 、 vw)
+
+
+    -->
+    <img src="img.ipg" alt="我是不存在的影像">
+    <br>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="google">
+    <br>
+    <!--單獨指定寬或高，影像會等比放大或縮小-->
+    <h5> 設定寬 = 100 px </h5>
+    <img src="images/99470.jpg" alt="Mypicture" width="100px">
+
+    <h5> 設定寬 = 70 % </h5>
+    <img src="images/99470.jpg" alt="Mypicture" width="70%">
+
+    <h5> 設定高 & 寬 </h5>
+    <img src="images/99470.jpg" alt="Mypicture" width="100px" height="300px">
+    
+</body>
+</html>
